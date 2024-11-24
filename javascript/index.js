@@ -31,6 +31,9 @@ setInterval(function () {
 
 function changeCity(event) {
   let selectedTimezone = event.target.value;
+  if (selectedTimezone === "current") {
+    selectedTimezone = moment.tz.guess();
+  }
   let nameChange = selectedTimezone.replace("_", " ").split("/")[1];
   let selectedTime = moment().tz(selectedTimezone);
   let mainCities = document.querySelector("#cities");
