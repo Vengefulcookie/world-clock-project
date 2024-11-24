@@ -45,7 +45,9 @@ function changeCity(event) {
           <div class= "time">${selectedTime.format(
             "HH:mm:ss [<small>] A [</small>]"
           )}</div>
-        </div>`;
+        </div>
+  <a href="index.html">Return to all cities🧭</a>
+  `;
 }
 
 let selectedCity = document.querySelector("#selected-city");
